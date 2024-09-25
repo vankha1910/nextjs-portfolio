@@ -1,5 +1,4 @@
 import { contact } from '@/app/lib/data';
-import Link from 'next/link';
 import React from 'react';
 
 const Contact = () => {
