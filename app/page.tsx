@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import Project from './components/Project';
 import Skills from './components/Skills';
-
+import Experience from './components/Experience';
 export default function Home() {
   const { theme } = useTheme();
   return (
@@ -17,6 +17,7 @@ export default function Home() {
           <About></About>
           <Project></Project>
           <Skills></Skills>
+          <Experience></Experience>
           <Contact></Contact>
         </main>
         <Footer></Footer>

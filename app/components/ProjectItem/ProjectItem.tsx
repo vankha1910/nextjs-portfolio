@@ -3,9 +3,17 @@ import Link from 'next/link';
 import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
+import Image from 'next/image';
 const ProjectItem = ({ project }: { project: Project }) => {
   return (
     <div className='project p-8'>
+      <Image
+        alt='avatar'
+        src='/projects/j3.jpg'
+        width={3840}
+        height={2160}
+        className='mb-4 rounded'
+      ></Image>
       <h3 className='font-semibold mb-4'>{project.name}</h3>
       <p className='mb-4'>{project.description}</p>
       {project.stack && (

@@ -38,6 +38,12 @@ const Navbar = () => {
           onClick={handleCloseNavList}
           className='link link--nav cursor-pointer'
         >
+          <Link href={'#experience'}>Experience</Link>
+        </li>
+        <li
+          onClick={handleCloseNavList}
+          className='link link--nav cursor-pointer'
+        >
           <Link href={'#contact'}>Contact</Link>
         </li>
       </ul>
