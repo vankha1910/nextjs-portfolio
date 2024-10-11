@@ -29,16 +29,25 @@ const projects = [
     stack: ['React', 'Tailwind', 'Redux', 'TypeScript'],
     sourceCode: 'https://github.com/vankha1910/100-things',
     livePreview: 'https://100-things.vercel.app/',
-    image: '/projects/100-things.png',
+    image:
+      'https://kpnrvqttgrmeqdvhezlv.supabase.co/storage/v1/object/public/projects/100-things.PNG',
   },
   {
     name: 'My Coffee',
     description:
       'A e-commerce app built for a coffee shop, featuring product listings, cart management, and a streamlined checkout process. It integrates with a backend API for efficient order and user management.',
-    stack: ['React', 'ExpressJS', 'Redux', 'React Query', 'React Hooks Form'],
+    stack: [
+      'React',
+      'ExpressJS',
+      'MongoDB',
+      'Redux',
+      'React Query',
+      'React Hooks Form',
+    ],
     sourceCode: 'https://github.com/vankha1910/grocery-market-react',
     livePreview: 'https://my-coffee-shop-kv.vercel.app/',
-    image: '/projects/my-coffee.png',
+    image:
+      'https://kpnrvqttgrmeqdvhezlv.supabase.co/storage/v1/object/public/projects/my-coffee.PNG',
   },
   {
     name: 'Wordle',
@@ -47,7 +56,8 @@ const projects = [
     stack: ['React', 'Tailwind', 'Redux', 'TypeScript'],
     sourceCode: 'https://github.com/vankha1910/react-wordle',
     livePreview: 'https://react-wordle-lilac.vercel.app/',
-    image: '/projects/wordle.png',
+    image:
+      'https://kpnrvqttgrmeqdvhezlv.supabase.co/storage/v1/object/public/projects/wordle.PNG',
   },
 ];
 
