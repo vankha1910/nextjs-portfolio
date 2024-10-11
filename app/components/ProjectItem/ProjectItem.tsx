@@ -26,6 +26,7 @@ const ProjectItem = ({
         width={1900}
         height={1000}
         className='mb-4 rounded flex-1 object-cover md:h-[175px] lg:h-[160px] xl:h-[226px]'
+        loading='lazy'
       ></Image>
       <h3 className='font-semibold mb-4'>{project.name}</h3>
       <p className='mb-4'>{project.description}</p>
