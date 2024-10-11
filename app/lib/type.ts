@@ -12,4 +12,12 @@ export type Project = {
   stack: string[];
   sourceCode: string;
   livePreview: string;
+  image: string;
 };
+export interface TimelineItem {
+  year: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  type: 'education' | 'experience';
+}

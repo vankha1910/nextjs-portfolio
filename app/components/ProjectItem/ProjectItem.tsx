@@ -4,20 +4,33 @@ import React from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LaunchIcon from '@mui/icons-material/Launch';
 import Image from 'next/image';
-const ProjectItem = ({ project }: { project: Project }) => {
+import { motion } from 'framer-motion';
+const ProjectItem = ({
+  project,
+  index,
+}: {
+  project: Project;
+  index: number;
+}) => {
   return (
-    <div className='project p-8'>
+    <motion.div
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5, delay: index * 0.1 }}
+      viewport={{ once: true }}
+      className='project p-8'
+    >
       <Image
         alt='avatar'
-        src='/projects/j3.jpg'
-        width={3840}
-        height={2160}
-        className='mb-4 rounded'
+        src={project.image}
+        width={1900}
+        height={1000}
+        className='mb-4 rounded flex-1 object-cover md:h-[175px] lg:h-[160px] xl:h-[226px]'
       ></Image>
       <h3 className='font-semibold mb-4'>{project.name}</h3>
       <p className='mb-4'>{project.description}</p>
       {project.stack && (
-        <ul className='flex gap-4 justify-center mb-6 '>
+        <ul className='flex gap-4 justify-center mb-6 flex-wrap'>
           {project.stack.map((item) => (
             <li className='font-medium text-sm' key={item}>
               {item}
@@ -47,7 +60,7 @@ const ProjectItem = ({ project }: { project: Project }) => {
           </Link>
         )}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

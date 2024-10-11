@@ -1,45 +1,13 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-interface TimelineItem {
-  year: string;
-  title: string;
-  subtitle: string;
-  description: string;
-  type: 'education' | 'experience';
-}
+import { experiences } from '@/app/lib/data';
+import { TimelineItem } from '@/app/lib/type';
 
 const Experience = () => {
-  const timelineItems: TimelineItem[] = [
-    {
-      year: '2022 - Present',
-      title: 'Google',
-      subtitle: 'Senior Frontend Developer',
-      description:
-        'Leading a team of developers in creating next-generation web applications. Implementing cutting-edge technologies and best practices in web development.',
-      type: 'experience',
-    },
-    {
-      year: '2020 - 2022',
-      title: 'Stanford University',
-      subtitle: "Master's Degree in Computer Science",
-      description:
-        'Focused on advanced algorithms, machine learning, and software engineering principles. Completed a thesis on optimizing neural networks for edge devices.',
-      type: 'education',
-    },
-    {
-      year: '2020 - 2022',
-      title: 'Amazon',
-      subtitle: 'Full-Stack Developer',
-      description:
-        "Developed and maintained critical components of Amazon's e-commerce platform. Collaborated with cross-functional teams to improve user experience and system efficiency.",
-      type: 'experience',
-    },
-  ];
-
   return (
     <section id='experience' className='container mx-auto mt-20 '>
       <h2 className='text-3xl font-bold text-center mb-12'>My Journey</h2>
-      <Timeline items={timelineItems} />
+      <Timeline items={experiences} />
     </section>
   );
 };
@@ -55,8 +23,9 @@ const Timeline: React.FC<{ items: TimelineItem[] }> = ({ items }) => {
             index % 2 === 0 ? 'md:justify-start' : 'md:justify-end'
           }`}
           initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: index * 0.1 }}
+          viewport={{ once: true }}
           style={{ willChange: 'unset' }}
         >
           <div

@@ -26,6 +26,12 @@ const Navbar = () => {
           onClick={handleCloseNavList}
           className='link link--nav cursor-pointer'
         >
+          <Link href={'#about'}>About</Link>
+        </li>
+        <li
+          onClick={handleCloseNavList}
+          className='link link--nav cursor-pointer'
+        >
           <Link href={'#projects'}>Projects</Link>
         </li>
         <li

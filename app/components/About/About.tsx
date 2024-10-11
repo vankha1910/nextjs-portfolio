@@ -14,21 +14,21 @@ const About = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Hi, I am <span className='about__name'>{name}.</span>
+        Hi, I am <span className='about__name'>{name}</span>
       </motion.h1>
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className='font-semibold mt-8'
+        className='font-semibold mt-8 text-center'
       >
-        A {role}.
+        A {role}
       </motion.h2>
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.6 }}
-        className=' mt-8 max-w-[600px]'
+        className=' mt-8 max-w-[600px] text-center'
       >
         {description && description}
       </motion.p>
