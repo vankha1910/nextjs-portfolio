@@ -47,23 +47,25 @@ const About = () => {
         {social && (
           <>
             {social.github && (
-              <a
+              <Link
+                target='_blank'
                 href={social.github}
                 aria-label='github'
                 className='link link--icon'
               >
                 <GitHubIcon />
-              </a>
+              </Link>
             )}
 
             {social.linkedin && (
-              <a
+              <Link
+                target='_blank'
                 href={social.linkedin}
                 aria-label='linkedin'
                 className='link link--icon'
               >
                 <LinkedInIcon />
-              </a>
+              </Link>
             )}
           </>
         )}

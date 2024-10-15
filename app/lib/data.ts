@@ -12,7 +12,8 @@ const about = {
   role: 'Front End Developer',
   description:
     "I'm passionate about creating unique and innovative things with great user experiences. I love animals, pop music, and beautiful places.",
-  resume: 'https://example.com',
+  resume:
+    'https://drive.google.com/file/d/13Lbk3LWVVsixtt_6w0Xw3mXdab2hX9OP/view?usp=drive_link',
   social: {
     linkedin: 'https://www.linkedin.com/in/khavanvo/',
     github: 'https://github.com/vankha1910',
